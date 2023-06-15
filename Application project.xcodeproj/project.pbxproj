@@ -18,6 +18,7 @@
 		494C26582A11F0D600E90FA8 /* subscriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C26572A11F0D600E90FA8 /* subscriptionCollectionViewCell.swift */; };
 		494C265A2A1267FF00E90FA8 /* discoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C26592A1267FF00E90FA8 /* discoverCollectionViewCell.swift */; };
 		494E06542A17AE86005F3FF1 /* storiesShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E06532A17AE86005F3FF1 /* storiesShow.swift */; };
+		495D080C2A3AD419008ABF34 /* DPOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = 495D080B2A3AD419008ABF34 /* DPOTPView */; };
 		496AA36F29E7CD00006956AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AA36E29E7CD00006956AB /* AppDelegate.swift */; };
 		496AA37129E7CD00006956AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AA37029E7CD00006956AB /* SceneDelegate.swift */; };
 		496AA37329E7CD00006956AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AA37229E7CD00006956AB /* ViewController.swift */; };
@@ -29,7 +30,6 @@
 		4974C87E2A08B3D100E42E1D /* MyTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974C87D2A08B3D100E42E1D /* MyTableViewCell2.swift */; };
 		4976C8892A0E7E430026A557 /* storyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976C8882A0E7E430026A557 /* storyCollectionViewCell.swift */; };
 		497897092A15E6DE00526F3B /* chatpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497897082A15E6DE00526F3B /* chatpage.swift */; };
-		497E9A882A036D2D008F1EDF /* DPOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = 497E9A872A036D2D008F1EDF /* DPOTPView */; };
 		497E9A8A2A036E01008F1EDF /* ViewController14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E9A892A036E01008F1EDF /* ViewController14.swift */; };
 		4986E7C229F7AFDB008E77AB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986E7C129F7AFDB008E77AB /* TabBarController.swift */; };
 		499A864829F6431B00F89F5D /* ViewController12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A864729F6431B00F89F5D /* ViewController12.swift */; };
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				497E9A882A036D2D008F1EDF /* DPOTPView in Frameworks */,
+				495D080C2A3AD419008ABF34 /* DPOTPView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +170,7 @@
 			);
 			name = "Application project";
 			packageProductDependencies = (
-				497E9A872A036D2D008F1EDF /* DPOTPView */,
+				495D080B2A3AD419008ABF34 /* DPOTPView */,
 			);
 			productName = "Application project";
 			productReference = 496AA36B29E7CD00006956AB /* Application project.app */;
@@ -201,7 +201,7 @@
 			);
 			mainGroup = 496AA36229E7CD00006956AB;
 			packageReferences = (
-				497E9A862A036D2D008F1EDF /* XCRemoteSwiftPackageReference "DPOTPView" */,
+				495D080A2A3AD419008ABF34 /* XCRemoteSwiftPackageReference "DPOTPView" */,
 			);
 			productRefGroup = 496AA36C29E7CD00006956AB /* Products */;
 			projectDirPath = "";
@@ -478,7 +478,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		497E9A862A036D2D008F1EDF /* XCRemoteSwiftPackageReference "DPOTPView" */ = {
+		495D080A2A3AD419008ABF34 /* XCRemoteSwiftPackageReference "DPOTPView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Datt1994/DPOTPView.git";
 			requirement = {
@@ -489,9 +489,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		497E9A872A036D2D008F1EDF /* DPOTPView */ = {
+		495D080B2A3AD419008ABF34 /* DPOTPView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 497E9A862A036D2D008F1EDF /* XCRemoteSwiftPackageReference "DPOTPView" */;
+			package = 495D080A2A3AD419008ABF34 /* XCRemoteSwiftPackageReference "DPOTPView" */;
 			productName = DPOTPView;
 		};
 /* End XCSwiftPackageProductDependency section */
