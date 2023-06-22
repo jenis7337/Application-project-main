@@ -11,7 +11,7 @@ class ViewController2: UIViewController {
     @IBOutlet weak var showHideButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        navigationItem.hidesBackButton = true
+//                navigationItem.hidesBackButton = true
         showHideButton.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
         setLoginButton()
         
