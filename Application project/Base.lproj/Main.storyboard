@@ -667,18 +667,6 @@
                                     <action selector="confirmButtonAction:" destination="kvd-DP-hES" eventType="touchUpInside" id="Uk3-j0-QWV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-7E-V0v">
-                                <rect key="frame" x="330" y="256" width="48" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="closeey"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBC-we-wFT">
-                                <rect key="frame" x="329" y="344" width="48" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="closeey"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CU1-Jb-Wmp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -703,10 +691,8 @@
                     </view>
                     <connections>
                         <outlet property="confirmButton" destination="Q1L-rd-gpy" id="ARs-lD-z0T"/>
-                        <outlet property="confirmTextField" destination="mQF-Hm-DUI" id="R6A-Mr-d1J"/>
-                        <outlet property="hideButton1" destination="GSs-7E-V0v" id="22D-cd-xpv"/>
-                        <outlet property="hideButton2" destination="KBC-we-wFT" id="ly8-wx-5Tp"/>
-                        <outlet property="newPasswordTextFiled" destination="mQF-Hm-DUI" id="7uc-A0-dbO"/>
+                        <outlet property="confirmTextField" destination="mQF-Hm-DUI" id="zHK-7p-u1G"/>
+                        <outlet property="newPasswordTextFiled" destination="Qt3-fH-lZF" id="rEH-TC-abI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rs5-Qr-qe6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -2,32 +2,21 @@ import UIKit
 
 class ViewController5: UIViewController {
     
-    @IBOutlet weak var hideButton2: UIButton!
-    @IBOutlet weak var hideButton1: UIButton!
+  
     @IBOutlet weak var newPasswordTextFiled: UITextField!
     @IBOutlet weak var confirmTextField: UITextField!
     @IBOutlet weak var confirmButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideButton1.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
-        //        setconfirmButton()
+       
     }
-    @objc func togglePasswordVisibility() {
-          newPasswordTextFiled.isSecureTextEntry.toggle()
-          confirmTextField.isSecureTextEntry.toggle()
-          
-          if newPasswordTextFiled.isSecureTextEntry {
-              hideButton1.setImage(UIImage(named: "closeey"), for: .normal)
-          } else {
-              hideButton1.setImage(UIImage(named: "openey"), for: .normal)
-          }
-      }
+
 
     @IBAction func confirmButtonAction(_ sender: Any) {
         //        let password = newPasswordTextFiled.text ?? ""
         //        let confirmPassword = confirmTextField.text ?? ""
         
-        if newPasswordTextFiled.text == "" && confirmTextField.text == ""{
+        if (newPasswordTextFiled.text == "") && (confirmTextField.text == ""){
             showAlert1()
         }
         else if newPasswordTextFiled.text == confirmTextField.text{
