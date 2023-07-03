@@ -7,6 +7,4 @@ class profilePage: UIViewController {
         super.viewDidLoad()
 
     }
-
-    
 }

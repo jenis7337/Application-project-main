@@ -1,10 +1,3 @@
-//
-//  MyTableViewCell.swift
-//  Application project
-//
-//  Created by Jenish Navadiya on 18/04/23.
-//
-
 import UIKit
 
 class MyTableViewCell: UITableViewCell {

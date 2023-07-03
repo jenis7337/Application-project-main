@@ -2,16 +2,16 @@ import UIKit
 
 class ViewController5: UIViewController {
     
-  
+    
     @IBOutlet weak var newPasswordTextFiled: UITextField!
     @IBOutlet weak var confirmTextField: UITextField!
     @IBOutlet weak var confirmButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
     }
-
-
+    
+    
     @IBAction func confirmButtonAction(_ sender: Any) {
         //        let password = newPasswordTextFiled.text ?? ""
         //        let confirmPassword = confirmTextField.text ?? ""
@@ -29,16 +29,7 @@ class ViewController5: UIViewController {
             confirmButton.layer.cornerRadius = 30
             confirmButton.layer.masksToBounds = true
         }
-        //        func showAlert(title:String){
-        //
-        //            let alert = UIAlertController(title: "Notice", message: "New Password is Successsful", preferredStyle: .alert)
-        //            alert.addAction(UIAlertAction(title: "Ok", style: .default,handler: { [self] _ in
-        //                naviget()
-        //            }))
-        //            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive))
-        //            present(alert, animated: true)
-        //
-        //        }
+     
         func showAlert1(){
             
             let alert = UIAlertController(title: "Notice", message: "New Password is Successsful", preferredStyle: .alert)

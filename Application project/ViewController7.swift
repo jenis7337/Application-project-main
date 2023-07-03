@@ -7,7 +7,7 @@ class ViewController7: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setconfirmButton()
-   }
+    }
     @IBAction func confrimButtonAction(_ sender: Any) {
         if otp.text?.count ?? 0 != 6{
             showAlert()

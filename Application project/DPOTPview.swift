@@ -126,7 +126,7 @@ public protocol DPOTPViewDelegate {
     fileprivate var arrTextFields : [OTPBackTextField] = []
     fileprivate var isLoaded = false
     /** Override coder init, for IB/XIB compatibility */
-    #if !TARGET_INTERFACE_BUILDER
+#if !TARGET_INTERFACE_BUILDER
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -140,7 +140,7 @@ public protocol DPOTPViewDelegate {
         super.layoutSubviews()
         self.initialization()
     }
-    #endif
+#endif
     
     open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
@@ -206,7 +206,7 @@ public protocol DPOTPViewDelegate {
             
             if placeholder.count > i - 1 {
                 textField.attributedPlaceholder = NSAttributedString(string: placeholder[i - 1],
-                attributes: [NSAttributedString.Key.foregroundColor: placeholderTextColor])
+                                                                     attributes: [NSAttributedString.Key.foregroundColor: placeholderTextColor])
             }
             
             textField.frame = CGRect(x:(CGFloat(i-1) * sizeTextField) + (CGFloat(i) * spacing/2) + (CGFloat(i-1) * spacing/2)  , y: (self.bounds.height - sizeTextField)/2 , width: sizeTextField, height: sizeTextField)
@@ -224,13 +224,13 @@ public protocol DPOTPViewDelegate {
         }
     }
     
-//    // Only override draw() if you perform custom drawing.
-//    // An empty implementation adversely affects performance during animation.
-//    override func draw(_ rect: CGRect) {
-//
-//        super.draw(rect)
-//    }
-
+    //    // Only override draw() if you perform custom drawing.
+    //    // An empty implementation adversely affects performance during animation.
+    //    override func draw(_ rect: CGRect) {
+    //
+    //        super.draw(rect)
+    //    }
+    
     @discardableResult
     open override func becomeFirstResponder() -> Bool {
         if arrTextFields.count != count {
@@ -336,15 +336,15 @@ fileprivate class OTPBackTextField: UITextField {
     }
     
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-//        if action == #selector(UIResponderStandardEditActions.copy(_:)) ||
-//            action == #selector(UIResponderStandardEditActions.cut(_:)) ||
-//            action == #selector(UIResponderStandardEditActions.select(_:)) ||
-//            action == #selector(UIResponderStandardEditActions.selectAll(_:)) ||
-//            action == #selector(UIResponderStandardEditActions.delete(_:)) {
-//
-//            return false
-//        }
-//        return super.canPerformAction(action, withSender: sender)
+        //        if action == #selector(UIResponderStandardEditActions.copy(_:)) ||
+        //            action == #selector(UIResponderStandardEditActions.cut(_:)) ||
+        //            action == #selector(UIResponderStandardEditActions.select(_:)) ||
+        //            action == #selector(UIResponderStandardEditActions.selectAll(_:)) ||
+        //            action == #selector(UIResponderStandardEditActions.delete(_:)) {
+        //
+        //            return false
+        //        }
+        //        return super.canPerformAction(action, withSender: sender)
         return false
     }
     

@@ -6,5 +6,4 @@ class userPage: UIViewController {
         super.viewDidLoad()
         
     }
-    
 }

@@ -10,7 +10,6 @@ class storiesShow: UIViewController {
         super.viewDidLoad()
         img.image = b
         lb.text = a
-        //        navigationItem.hidesBackButton = true
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
