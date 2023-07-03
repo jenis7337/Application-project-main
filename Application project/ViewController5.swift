@@ -8,16 +8,19 @@ class ViewController5: UIViewController {
     @IBOutlet weak var confirmButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setconfirmButton()
+    }
+    func setconfirmButton(){
+        confirmButton.layer.cornerRadius = 30
+        confirmButton.layer.masksToBounds = true
     }
     
-    
     @IBAction func confirmButtonAction(_ sender: Any) {
-        //        let password = newPasswordTextFiled.text ?? ""
-        //        let confirmPassword = confirmTextField.text ?? ""
+
         
-        if (newPasswordTextFiled.text == "") && (confirmTextField.text == ""){
+        if (newPasswordTextFiled.text?.count ?? 0 != 6 ) && (confirmTextField.text?.count ?? 0 != 6){
             showAlert1()
+            naviget()
         }
         else if newPasswordTextFiled.text == confirmTextField.text{
             naviget()
@@ -25,15 +28,12 @@ class ViewController5: UIViewController {
         else{
             showAlert1()
         }
-        func setconfirmButton(){
-            confirmButton.layer.cornerRadius = 30
-            confirmButton.layer.masksToBounds = true
-        }
+   
      
         func showAlert1(){
             
-            let alert = UIAlertController(title: "Notice", message: "New Password is Successsful", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            let alert = UIAlertController(title: "Notice", message: "New Password not is Successsful", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default))
             present(alert, animated: true)
             
         }

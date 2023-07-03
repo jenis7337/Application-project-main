@@ -14,6 +14,7 @@ class chatpage: UIViewController {
         chatName.text = a
         setLable()
         initialSetup()
+//    navigationItem.hidesBackButton = true
     }
     func setLable(){
         lb.layer.cornerRadius = 17

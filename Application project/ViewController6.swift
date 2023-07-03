@@ -14,8 +14,6 @@ class ViewController6: UIViewController {
     }
     @IBAction func confirmButtonAction(_ sender: Any) {
         if mobileNumberTextfield.text == "7862024500"{
-            
-            
             naviget()
         }
         else{

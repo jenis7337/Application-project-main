@@ -11,7 +11,7 @@ class ViewController3: UIViewController {
         naviget()
     }
     func setcontinueButton(){
-        continueButton.layer.cornerRadius = 30
+        continueButton.layer.cornerRadius = 20
         continueButton.layer.masksToBounds = true
     }
     func naviget(){
